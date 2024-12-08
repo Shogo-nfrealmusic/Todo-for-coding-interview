@@ -1,0 +1,9 @@
+services:
+  todo-backend:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=production
